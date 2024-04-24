@@ -122,7 +122,7 @@ namespace RecommendatorWeb.Controllers
             return View(topic);
         }
 
-        // POST: Topic/Delete/5
+        // POST: Topic for delete
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
