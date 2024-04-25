@@ -36,7 +36,8 @@ namespace RecommendatorWeb
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.GetHashCode();
+            
             app.UseRouting();
 
             app.UseAuthentication();

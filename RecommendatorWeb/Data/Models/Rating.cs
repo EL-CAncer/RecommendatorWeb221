@@ -8,7 +8,7 @@ public class Rating
     // Foreign key
     public int UserId { get; set; }
     // Navigation property
-    public AppUser1 User { get; set; }
+    public AppUser User { get; set; }
 
     // Foreign key
     public int TopicId { get; set; }

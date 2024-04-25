@@ -5,7 +5,7 @@ using RecommendatorWeb.Models;
 
 namespace RecommendatorWeb.Data
 {
-    public class ApplicationDbContext : IdentityDbContext<AppUser,IdentityRole,string>
+    public class ApplicationDbContext : IdentityDbContext<IdentityUser,IdentityRole,string>
     {
 
         public DbSet<Service> Services { get; set; }
@@ -16,6 +16,7 @@ namespace RecommendatorWeb.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+            
         }
 
 

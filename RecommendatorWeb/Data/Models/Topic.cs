@@ -10,7 +10,7 @@
         // Foreign key
         public int UserId { get; set; }
         // Navigation property
-        public AppUser1 User { get; set; }
+        public AppUser User { get; set; }
 
         // Navigation property
         public ICollection<Comment> Comments { get; set; }

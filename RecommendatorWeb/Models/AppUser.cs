@@ -4,6 +4,7 @@ namespace RecommendatorWeb.Models
 {
     public class AppUser :IdentityUser<string>
     {
+        internal string ShippingAddress;
 
         public AppUser()
         {

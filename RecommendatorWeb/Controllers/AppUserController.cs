@@ -23,7 +23,7 @@ namespace RecommendatorWeb.Controllers
         // POST: User/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Username,Email,PasswordHash,Role")] AppUser1 user)
+        public async Task<IActionResult> Create([Bind("Id,Username,Email,PasswordHash,Role")] AppUser user)
         {
             if (ModelState.IsValid)
             {
